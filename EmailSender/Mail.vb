@@ -2,9 +2,9 @@
 
 Module Mail
 
-    'inputs: user, pass, from, to, subject, message, server, port
+    'inputs: user, pass, from, to, subject, message, server, port, ssl
 
-    Public Function sendEmail(ByVal user As String, ByVal pass As String, ByVal from As String, ByVal recipient As String, ByVal subject As String, ByVal message As String, ByVal server As String, ByVal port As Integer) As Boolean
+    Public Function sendEmail(ByVal user As String, ByVal pass As String, ByVal from As String, ByVal recipient As String, ByVal subject As String, ByVal message As String, ByVal server As String, ByVal port As Integer, ByVal ssl As Boolean) As Boolean
         Dim UserName As String = user
         Dim mail As MailMessage = New MailMessage
         Dim t As Boolean
@@ -18,7 +18,7 @@ Module Mail
         mail.IsBodyHtml = True
 
         Dim client As SmtpClient = New SmtpClient(server, port)
-        client.EnableSsl = True
+        client.EnableSsl = ssl
         client.UseDefaultCredentials = False
         client.Credentials = New System.Net.NetworkCredential(UserName, pass)
         Try
@@ -30,7 +30,7 @@ Module Mail
         Return t
 
     End Function
-    'inputs: user, pass, from, to, subject, message, "smptp.gmail.com", 587
+    'inputs: user, pass, from, to, subject, message, Google server
     Public Function sendEmail(ByVal user As String, ByVal pass As String, ByVal from As String, ByVal recipient As String, ByVal subject As String, ByVal message As String) As Boolean
         Dim UserName As String = user
         Dim mail As MailMessage = New MailMessage

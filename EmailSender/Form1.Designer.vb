@@ -41,9 +41,6 @@ Partial Class Form1
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -66,7 +63,6 @@ Partial Class Form1
         '
         Me.TextBox2.Location = New System.Drawing.Point(123, 92)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(111)
         Me.TextBox2.Size = New System.Drawing.Size(445, 26)
         Me.TextBox2.TabIndex = 2
         '
@@ -105,7 +101,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 169)
+        Me.Label3.Location = New System.Drawing.Point(10, 166)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(46, 20)
         Me.Label3.TabIndex = 7
@@ -114,7 +110,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(13, 201)
+        Me.Label4.Location = New System.Drawing.Point(12, 178)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(27, 20)
         Me.Label4.TabIndex = 8
@@ -123,7 +119,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(13, 233)
+        Me.Label5.Location = New System.Drawing.Point(13, 239)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(63, 20)
         Me.Label5.TabIndex = 10
@@ -139,7 +135,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(13, 265)
+        Me.Label6.Location = New System.Drawing.Point(13, 278)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(74, 20)
         Me.Label6.TabIndex = 12
@@ -151,13 +147,13 @@ Partial Class Form1
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox6.Size = New System.Drawing.Size(445, 308)
+        Me.TextBox6.Size = New System.Drawing.Size(445, 264)
         Me.TextBox6.TabIndex = 11
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(690, 98)
+        Me.Label7.Location = New System.Drawing.Point(690, 95)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(38, 20)
         Me.Label7.TabIndex = 16
@@ -166,7 +162,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(690, 58)
+        Me.Label8.Location = New System.Drawing.Point(690, 52)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(55, 20)
         Me.Label8.TabIndex = 15
@@ -175,7 +171,7 @@ Partial Class Form1
         'TextBox7
         '
         Me.TextBox7.Enabled = False
-        Me.TextBox7.Location = New System.Drawing.Point(759, 58)
+        Me.TextBox7.Location = New System.Drawing.Point(759, 92)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(278, 26)
         Me.TextBox7.TabIndex = 14
@@ -183,7 +179,7 @@ Partial Class Form1
         'TextBox8
         '
         Me.TextBox8.Enabled = False
-        Me.TextBox8.Location = New System.Drawing.Point(759, 95)
+        Me.TextBox8.Location = New System.Drawing.Point(759, 52)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(278, 26)
         Me.TextBox8.TabIndex = 13
@@ -206,41 +202,11 @@ Partial Class Form1
         Me.Label9.TabIndex = 18
         Me.Label9.Text = "If not enabled default: smtp.gmail.com through 587"
         '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(691, 144)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(40, 20)
-        Me.Label10.TabIndex = 19
-        Me.Label10.Text = "SSL"
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Enabled = False
-        Me.CheckBox2.Location = New System.Drawing.Point(759, 143)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(22, 21)
-        Me.CheckBox2.TabIndex = 20
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'Label11
-        '
-        Me.Label11.Location = New System.Drawing.Point(17, 593)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(551, 63)
-        Me.Label11.TabIndex = 21
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1249, 790)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label7)
@@ -287,7 +253,4 @@ Partial Class Form1
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents Label11 As Label
 End Class

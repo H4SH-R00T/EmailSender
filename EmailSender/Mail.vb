@@ -10,7 +10,7 @@ Module Mail
         Dim t As Boolean
         t = True
 
-        mail.From = New MailAddress(UserName)
+        mail.From = New MailAddress(from)
         mail.To.Add(New MailAddress(recipient))
         mail.Subject = subject
         mail.Body = message
